@@ -1,0 +1,5 @@
+relationship 8131c381-1daa-49c6-96a6-c29a708822bd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Control-de-Productos.'Fecha de operación'
+	toColumn: LocalDateTable_37a1d2b7-4f59-432f-8c3b-ff76cbe3667e.Date
+

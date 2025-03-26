@@ -1,0 +1,228 @@
+table Control-de-Productos
+	lineageTag: 40210d5c-96ba-41c3-9583-fc7c39f69039
+
+	column 'Fecha de operación'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4f9c8493-b6c7-441c-963f-72fe2b6a72b4
+		summarizeBy: none
+		sourceColumn: Fecha de operación
+
+		variation Variación
+			isDefault
+			relationship: 8131c381-1daa-49c6-96a6-c29a708822bd
+			defaultHierarchy: LocalDateTable_37a1d2b7-4f59-432f-8c3b-ff76cbe3667e.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Tipo de operación'
+		dataType: string
+		lineageTag: 0a8e802c-60a9-4ed9-a0f6-e0ea8295fe09
+		summarizeBy: none
+		sourceColumn: Tipo de operación
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nro de Pedido'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0dd1573d-c5ba-4748-8db4-689ba4ba6d16
+		summarizeBy: sum
+		sourceColumn: Nro de Pedido
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nº Cliente'
+		dataType: int64
+		formatString: 0
+		lineageTag: 308c9665-defb-4942-b55b-91c888a19d40
+		summarizeBy: sum
+		sourceColumn: Nº Cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column RUC
+		dataType: int64
+		formatString: 0
+		lineageTag: 57f47d89-faa7-4eae-b75a-41d9db28a628
+		summarizeBy: sum
+		sourceColumn: RUC
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cliente
+		dataType: string
+		lineageTag: 7c6f66de-4939-425c-8845-20ec00fbcd18
+		summarizeBy: none
+		sourceColumn: Cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de cliente'
+		dataType: string
+		lineageTag: 2de88013-2557-4204-800e-28636cbfcbae
+		summarizeBy: none
+		sourceColumn: Tipo de cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Clasificación de productos'
+		dataType: string
+		lineageTag: 2b58f594-e2b2-4208-9c69-3feef8d3e082
+		summarizeBy: none
+		sourceColumn: Clasificación de productos
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Código del producto'
+		dataType: int64
+		formatString: 0
+		lineageTag: c6f4f3d7-d77b-4e52-8551-02920610261c
+		summarizeBy: sum
+		sourceColumn: Código del producto
+
+		annotation SummarizationSetBy = Automatic
+
+	column Descripción
+		dataType: string
+		lineageTag: 40c3d052-6689-4592-8e32-aac8a2552f79
+		summarizeBy: none
+		sourceColumn: Descripción
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cantidad
+		dataType: int64
+		formatString: 0
+		lineageTag: 78079b89-7940-4088-9428-abd3bcd321c8
+		summarizeBy: sum
+		sourceColumn: Cantidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Precio unitario'
+		dataType: double
+		lineageTag: df909655-7c55-4c71-aee5-aed290fd0202
+		summarizeBy: sum
+		sourceColumn: Precio unitario
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Sub total'
+		dataType: double
+		lineageTag: 8da07882-5a18-4524-93a9-18511615288a
+		summarizeBy: sum
+		sourceColumn: Sub total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Flete
+		dataType: double
+		lineageTag: 89ce6ce0-524a-49d9-ac7d-756a900bffc7
+		summarizeBy: sum
+		sourceColumn: Flete
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Ingreso total'
+		dataType: double
+		lineageTag: a87687e0-6704-4caf-a946-0a57ed02af38
+		summarizeBy: sum
+		sourceColumn: Ingreso total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Costo unitario'
+		dataType: double
+		lineageTag: 3c27fc3c-1b18-4118-ae32-04af509e1fb7
+		summarizeBy: sum
+		sourceColumn: Costo unitario
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Costo total'
+		dataType: double
+		lineageTag: c3e1d54c-a52f-4877-bdad-a69a652c8907
+		summarizeBy: sum
+		sourceColumn: Costo total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Nº de guía de remisión'
+		dataType: string
+		lineageTag: 3805817b-be50-4527-9d22-02de25d665da
+		summarizeBy: none
+		sourceColumn: Nº de guía de remisión
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nº de factura'
+		dataType: string
+		lineageTag: 5a51e23b-5923-40ee-ba39-8a92340055da
+		summarizeBy: none
+		sourceColumn: Nº de factura
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo de comprobante'
+		dataType: string
+		lineageTag: 57532ca0-6a87-4441-9f50-c916d61238c6
+		summarizeBy: none
+		sourceColumn: Tipo de comprobante
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 39941896-6b81-4241-8d5b-eeff8a57ad61
+		summarizeBy: sum
+		sourceColumn: Mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		dataType: int64
+		formatString: 0
+		lineageTag: 9bdc1299-79be-4b9a-83c4-63e6c4e6af26
+		summarizeBy: sum
+		sourceColumn: Año
+
+		annotation SummarizationSetBy = Automatic
+
+	column Semana
+		dataType: int64
+		formatString: 0
+		lineageTag: 18a70b1e-e062-4540-b646-6be421d2bafb
+		summarizeBy: sum
+		sourceColumn: Semana
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Control-de-Productos = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\EQUIPO-PC\Videos\git-y-github\Proyecto-1-Power-Bi\Data\Control-de-Productos.xlsx"), null, true),
+				    #"Control-de-Productos_Sheet" = Origen{[Item="Control-de-Productos",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Control-de-Productos_Sheet", [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Fecha de operación", type date}, {"Tipo de operación", type text}, {"Nro de Pedido", Int64.Type}, {"Nº Cliente", Int64.Type}, {"RUC", Int64.Type}, {"Cliente", type text}, {"Tipo de cliente", type text}, {"Clasificación de productos", type text}, {"Código del producto", Int64.Type}, {"Descripción", type text}, {"Cantidad", Int64.Type}, {"Precio unitario", type number}, {"Sub total", type number}, {"Flete", type number}, {"Ingreso total", type number}, {"Costo unitario", type number}, {"Costo total", type number}, {"Nº de guía de remisión", type text}, {"Nº de factura", type text}, {"Tipo de comprobante", type text}, {"Mes", Int64.Type}, {"Año", Int64.Type}, {"Semana", Int64.Type}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+
