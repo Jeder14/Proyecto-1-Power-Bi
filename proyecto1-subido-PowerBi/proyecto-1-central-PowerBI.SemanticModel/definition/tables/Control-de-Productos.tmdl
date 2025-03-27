@@ -187,28 +187,27 @@ table Control-de-Productos
 		annotation SummarizationSetBy = Automatic
 
 	column Mes
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 39941896-6b81-4241-8d5b-eeff8a57ad61
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Mes
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column Año
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 9bdc1299-79be-4b9a-83c4-63e6c4e6af26
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Año
 
 		annotation SummarizationSetBy = Automatic
 
 	column Semana
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 18a70b1e-e062-4540-b646-6be421d2bafb
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: Semana
 
 		annotation SummarizationSetBy = Automatic
@@ -220,9 +219,11 @@ table Control-de-Productos
 				    Origen = Excel.Workbook(File.Contents("C:\Users\EQUIPO-PC\Videos\git-y-github\Proyecto-1-Power-Bi\Data\Control-de-Productos.xlsx"), null, true),
 				    #"Control-de-Productos_Sheet" = Origen{[Item="Control-de-Productos",Kind="Sheet"]}[Data],
 				    #"Encabezados promovidos" = Table.PromoteHeaders(#"Control-de-Productos_Sheet", [PromoteAllScalars=true]),
-				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Fecha de operación", type date}, {"Tipo de operación", type text}, {"Nro de Pedido", Int64.Type}, {"Nº Cliente", Int64.Type}, {"RUC", Int64.Type}, {"Cliente", type text}, {"Tipo de cliente", type text}, {"Clasificación de productos", type text}, {"Código del producto", Int64.Type}, {"Descripción", type text}, {"Cantidad", Int64.Type}, {"Precio unitario", type number}, {"Sub total", type number}, {"Flete", type number}, {"Ingreso total", type number}, {"Costo unitario", type number}, {"Costo total", type number}, {"Nº de guía de remisión", type text}, {"Nº de factura", type text}, {"Tipo de comprobante", type text}, {"Mes", Int64.Type}, {"Año", Int64.Type}, {"Semana", Int64.Type}})
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Fecha de operación", type date}, {"Tipo de operación", type text}, {"Nro de Pedido", Int64.Type}, {"Nº Cliente", Int64.Type}, {"RUC", Int64.Type}, {"Cliente", type text}, {"Tipo de cliente", type text}, {"Clasificación de productos", type text}, {"Código del producto", Int64.Type}, {"Descripción", type text}, {"Cantidad", Int64.Type}, {"Precio unitario", type number}, {"Sub total", type number}, {"Flete", type number}, {"Ingreso total", type number}, {"Costo unitario", type number}, {"Costo total", type number}, {"Nº de guía de remisión", type text}, {"Nº de factura", type text}, {"Tipo de comprobante", type text}, {"Mes", type text}, {"Año", type text}, {"Semana", type text}})
 				in
 				    #"Tipo cambiado"
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
 
