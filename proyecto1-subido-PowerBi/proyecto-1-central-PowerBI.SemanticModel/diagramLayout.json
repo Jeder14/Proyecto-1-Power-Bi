@@ -16,14 +16,14 @@
           "nodeIndex": "Control-de-Productos",
           "nodeLineageTag": "40210d5c-96ba-41c3-9583-fc7c39f69039",
           "size": {
-            "height": 300,
-            "width": 234
+            "height": 387,
+            "width": 278
           },
           "zIndex": 0
         }
       ],
       "name": "Todas las tablas",
-      "zoomValue": 100,
+      "zoomValue": 92.5512104283054,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

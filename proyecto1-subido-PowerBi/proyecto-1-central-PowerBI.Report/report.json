@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -25,7 +25,35 @@
       "filters": "[]",
       "height": 720.00,
       "name": "b9b93042aa51b18bd02c",
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"7f76941010199b28112e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":914.2857142857143,\"y\":275.0948166877371,\"z\":0,\"width\":365.7142857142857,\"height\":443.38811630847033,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Control-de-Productos.Cliente\"},{\"queryRef\":\"Control-de-Productos.Año\"},{\"queryRef\":\"Control-de-Productos.Mes\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Control-de-Productos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Cliente\"},\"Name\":\"Control-de-Productos.Cliente\",\"NativeReferenceName\":\"Cliente\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"},\"Name\":\"Control-de-Productos.Año\",\"NativeReferenceName\":\"Año\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Mes\"},\"Name\":\"Control-de-Productos.Mes\",\"NativeReferenceName\":\"Mes\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 443.39,
+          "width": 365.71,
+          "x": 914.29,
+          "y": 275.09,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b71c84ab4242a2898b0e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":63.69181380417336,\"y\":406.8057784911718,\"z\":2000,\"width\":577.3354735152489,\"height\":312.2953451043339,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Control-de-Productos.Año\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Control-de-Productos.Cliente)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Control-de-Productos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"},\"Name\":\"Control-de-Productos.Año\",\"NativeReferenceName\":\"Año\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Cliente\"}},\"Function\":5},\"Name\":\"CountNonNull(Control-de-Productos.Cliente)\",\"NativeReferenceName\":\"Recuento de Cliente\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Cliente\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'BottomCenter'\"}}},\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Percent of total'\"}}}}},{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}]}}}",
+          "filters": "[]",
+          "height": 312.30,
+          "width": 577.34,
+          "x": 63.69,
+          "y": 406.81,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"d7f6d74052860cbe1992\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":725.2648475120385,\"height\":406.8057784911718,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Control-de-Productos.Año\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Control-de-Productos.Ingreso total)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Control-de-Productos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"},\"Name\":\"Control-de-Productos.Año\",\"NativeReferenceName\":\"Año\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Ingreso total\"}},\"Function\":0},\"Name\":\"Sum(Control-de-Productos.Ingreso total)\",\"NativeReferenceName\":\"Suma de Ingreso total\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Ingreso total\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 406.81,
+          "width": 725.26,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
       "width": 1280.00
     }
   ]

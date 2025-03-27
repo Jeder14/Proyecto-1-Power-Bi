@@ -104,13 +104,14 @@ table Control-de-Productos
 
 	column 'Precio unitario'
 		dataType: double
+		formatString: 0
 		lineageTag: df909655-7c55-4c71-aee5-aed290fd0202
 		summarizeBy: sum
 		sourceColumn: Precio unitario
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isDecimal":true}
 
 	column 'Sub total'
 		dataType: double
@@ -144,23 +145,21 @@ table Control-de-Productos
 
 	column 'Costo unitario'
 		dataType: double
+		formatString: 0.00
 		lineageTag: 3c27fc3c-1b18-4118-ae32-04af509e1fb7
 		summarizeBy: sum
 		sourceColumn: Costo unitario
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column 'Costo total'
 		dataType: double
+		formatString: 0.00
 		lineageTag: c3e1d54c-a52f-4877-bdad-a69a652c8907
 		summarizeBy: sum
 		sourceColumn: Costo total
 
 		annotation SummarizationSetBy = Automatic
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column 'Nº de guía de remisión'
 		dataType: string
