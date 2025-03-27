@@ -1,0 +1,22 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Control-de-Productos"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.140.1577.0 (25.02)+00af0910c5ca19a229c472b0dfc17a2c488f6b0a
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Control-de-Productos
+ref table DateTableTemplate_9d156f8d-4b69-439c-a8d6-731a8c79db07
+ref table LocalDateTable_37a1d2b7-4f59-432f-8c3b-ff76cbe3667e
+
+ref cultureInfo es-ES
+
