@@ -59,7 +59,7 @@ El ejercicio está finalizado y funcional, incluyendo filtros interactivos, múl
         -    Valores: `% Clientes`
         -    Leyenda: `Año`
         -  **Gráfico de barras horizontales**:
-        -     Eje Y: `Cliente`
+        -    Eje Y: `Cliente`
         -    Valores: `Ingreso Total`
         -    Leyenda: `Año`
         - **Tabla**:
@@ -67,12 +67,12 @@ El ejercicio está finalizado y funcional, incluyendo filtros interactivos, múl
 
       2.2. **Agregar segmentadores interactivos**:
         -    Filtros tipo *slicer* para los siguientes campos:
-        -       `Año`
+        -      `Año`
         -      `Tipo de cliente`
-        -     `RUC`
-        -    `Tipo de comprobante`
+        -      `RUC`
+        -      `Tipo de comprobante`
         
-3. **Crear medidas DAX**:
+4. **Crear medidas DAX**:
    DAX
 Ingreso Total = SUM('Ventas'[Ingreso])
 Costo Total = SUM('Ventas'[Costo])
