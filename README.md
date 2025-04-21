@@ -44,34 +44,34 @@ El ejercicio está finalizado y funcional, incluyendo filtros interactivos, múl
 
 2. **Modelado de datos**
    - Establecer relaciones si se usan múltiples tablas (relaciones entre `Cliente`, `Fecha`, etc.)
-    
-2.1. **Agregar visualizaciones**:
-     - **Tarjeta**: para mostrar el ingreso total
-     - **Gráfico de columnas apiladas**:  
-       - Eje X: `Mes`  
-       - Valores: `Ingreso Total`  
-       - Leyenda: `Año`
-     - **Gráfico combinado (columnas + línea)**:  
-       - Eje X: `Cliente`  
-       - Valores: `Ingreso Total` (columna), `Costo Total` (línea)  
-       - Leyenda: `Año`
-     - **Gráfico de pastel**:  
-       - Valores: `% Clientes`  
-       - Leyenda: `Año`
-     - **Gráfico de barras horizontales**:  
-       - Eje Y: `Cliente`  
-       - Valores: `Ingreso Total`  
-       - Leyenda: `Año`
-     - **Tabla**:  
-       - Columnas: `Cliente`, `Año`, `Mes`
 
-2.2. **Agregar segmentadores interactivos**:
-     - Filtros tipo *slicer* para los siguientes campos:
-      - `Año`
-      - `Tipo de cliente`
-      - `RUC`
-      - `Tipo de comprobante`
-  
+     2.1. **Agregar visualizaciones**:
+           - **Tarjeta**: para mostrar el ingreso total
+           - **Gráfico de columnas apiladas**:  
+             - Eje X: `Mes`  
+             - Valores: `Ingreso Total`  
+             - Leyenda: `Año`
+           - **Gráfico combinado (columnas + línea)**:  
+             - Eje X: `Cliente`  
+             - Valores: `Ingreso Total` (columna), `Costo Total` (línea)  
+             - Leyenda: `Año`
+           - **Gráfico de pastel**:  
+             - Valores: `% Clientes`  
+             - Leyenda: `Año`
+           - **Gráfico de barras horizontales**:  
+             - Eje Y: `Cliente`  
+             - Valores: `Ingreso Total`  
+             - Leyenda: `Año`
+           - **Tabla**:  
+             - Columnas: `Cliente`, `Año`, `Mes`
+
+      2.2. **Agregar segmentadores interactivos**:
+           - Filtros tipo *slicer* para los siguientes campos:
+            - `Año`
+            - `Tipo de cliente`
+            - `RUC`
+            - `Tipo de comprobante`
+        
 3. **Crear medidas DAX**:
    DAX
 Ingreso Total = SUM('Ventas'[Ingreso])
