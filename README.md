@@ -45,7 +45,7 @@ El ejercicio está finalizado y funcional, incluyendo filtros interactivos, múl
 2. **Modelado de datos**
    - Establecer relaciones si se usan múltiples tablas (relaciones entre `Cliente`, `Fecha`, etc.)
     
-  2.1. **Agregar visualizaciones**:
+2.1. **Agregar visualizaciones**:
      - **Tarjeta**: para mostrar el ingreso total
      - **Gráfico de columnas apiladas**:  
        - Eje X: `Mes`  
@@ -65,7 +65,7 @@ El ejercicio está finalizado y funcional, incluyendo filtros interactivos, múl
      - **Tabla**:  
        - Columnas: `Cliente`, `Año`, `Mes`
 
- 2.2. **Agregar segmentadores interactivos**:
+2.2. **Agregar segmentadores interactivos**:
      - Filtros tipo *slicer* para los siguientes campos:
       - `Año`
       - `Tipo de cliente`
@@ -73,7 +73,7 @@ El ejercicio está finalizado y funcional, incluyendo filtros interactivos, múl
       - `Tipo de comprobante`
   
 3. **Crear medidas DAX**:
-```DAX
+   DAX
 Ingreso Total = SUM('Ventas'[Ingreso])
 Costo Total = SUM('Ventas'[Costo])
 
